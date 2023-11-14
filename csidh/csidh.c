@@ -210,7 +210,6 @@ bool action(public_key *out, public_key const *in, private_key const *priv,
 {
 
     //factors k for different batches
-    //k[1]=2^2 · 3 · 7 · 11 · 17 · 19 · 29 · 31 · 41 · 43 · 53 · 59 · 67 · 71 · 79 · 83 · 97 · 101 · 107 · 109 · 127 · 131 · 139 · 149 · 157 · 163 · 173 · 179 · 191 · 193 · 199 · 211 · 227 · 229 · 239 · 241 · 257 · 263 · 271 · 277 · 283 · 293 · 311 · 313 · 331 · 337 · 349 · 353 · 367 · 587
     uint_c k[3] = {{{0x1b5933af628d005c, 0x9d4af02b1d7b7f56, 0x8977a8435092262a, 0xb86302ff54a37ca2, 0xd6e09db2af04d095, 0x5c73f, 0x0, 0x0}},
                  {{0xd97b8b6bc6f6be1c, 0x315872c44ea6e448, 0x1aae7c54fd380c86, 0x237ec4cf2da454a2, 0x3733f9e3d9fea1b4, 0x1fdc0e, 0x0, 0x0}},
                  {{0x629ea97b02169a84, 0xc4b9616a12d48d22, 0x492a10278ad7b45a, 0xc44ac4dce55b87f8, 0x9e12876886632d6e, 0xe0c0c5, 0x0, 0x0}}};
@@ -341,6 +340,7 @@ bool action(public_key *out, public_key const *in, private_key const *priv,
                     
                     if (i == last_iso[m])
                     {
+                        printf("last:%d\n",primes[i]);  
                         lastxISOG(&A, &K, primes[i], bc); // doesn't compute the images of points
                     }
                     else

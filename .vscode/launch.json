@@ -1,0 +1,13 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "lldb",
+      "request": "launch",
+      "args": [],
+      "cwd": "/Users/chiutinghung/Documents/GitHub/constant-time-CSIDH-Fault-Attack/csidh",
+      "program": "/Users/chiutinghung/Documents/GitHub/constant-time-CSIDH-Fault-Attack/csidh/build/Debug/outDebug"
+    }
+  ]
+}
